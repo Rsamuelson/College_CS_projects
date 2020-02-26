@@ -1,0 +1,7 @@
+module lab3step1(c,g,w,A);
+	input c,g,w, F;
+	output A;
+	
+	assign A = (F & ((~c & ~g) | (~g & ~w))) | (F & ((c & g) | (g & w)));
+	
+endmodule

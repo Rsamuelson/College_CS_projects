@@ -1,0 +1,75 @@
+|lab8step2
+F[0] <= mux4to1:inst3.f
+F[1] <= mux4to1:inst2.f
+F[2] <= mux4to1:inst1.f
+F[3] <= mux4to1:inst.f
+x3 => mux4to1:inst.i0
+x2 => mux4to1:inst.i1
+x2 => mux4to1:inst1.i0
+x1 => mux4to1:inst.i2
+x1 => mux4to1:inst1.i1
+x1 => mux4to1:inst2.i0
+x0 => mux4to1:inst.i3
+x0 => mux4to1:inst1.i2
+x0 => mux4to1:inst2.i1
+x0 => mux4to1:inst3.i0
+s[0] => mux4to1:inst.s[0]
+s[0] => mux4to1:inst1.s[0]
+s[0] => mux4to1:inst2.s[0]
+s[0] => mux4to1:inst3.s[0]
+s[1] => mux4to1:inst.s[1]
+s[1] => mux4to1:inst1.s[1]
+s[1] => mux4to1:inst2.s[1]
+s[1] => mux4to1:inst3.s[1]
+x-1 => mux4to1:inst1.i3
+x-1 => mux4to1:inst2.i2
+x-1 => mux4to1:inst3.i1
+x-2 => mux4to1:inst2.i3
+x-2 => mux4to1:inst3.i2
+x-3 => mux4to1:inst3.i3
+
+
+|lab8step2|mux4to1:inst
+i0 => f.DATAA
+i1 => f.DATAB
+i2 => f.DATAA
+i3 => f.DATAB
+s[0] => f.OUTPUTSELECT
+s[0] => f.OUTPUTSELECT
+s[1] => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab8step2|mux4to1:inst1
+i0 => f.DATAA
+i1 => f.DATAB
+i2 => f.DATAA
+i3 => f.DATAB
+s[0] => f.OUTPUTSELECT
+s[0] => f.OUTPUTSELECT
+s[1] => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab8step2|mux4to1:inst2
+i0 => f.DATAA
+i1 => f.DATAB
+i2 => f.DATAA
+i3 => f.DATAB
+s[0] => f.OUTPUTSELECT
+s[0] => f.OUTPUTSELECT
+s[1] => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab8step2|mux4to1:inst3
+i0 => f.DATAA
+i1 => f.DATAB
+i2 => f.DATAA
+i3 => f.DATAB
+s[0] => f.OUTPUTSELECT
+s[0] => f.OUTPUTSELECT
+s[1] => f.OUTPUTSELECT
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+

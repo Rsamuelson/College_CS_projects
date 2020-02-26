@@ -1,0 +1,16 @@
+|lab3step3
+c => a.IN0
+c => a.IN0
+g => a.IN1
+g => a.IN0
+g => a.IN0
+g => a.IN1
+w => a.IN1
+w => a.IN1
+a <= a.DB_MAX_OUTPUT_PORT_TYPE
+f => a.IN1
+f => a.IN1
+f => a.IN1
+f => a.IN1
+
+

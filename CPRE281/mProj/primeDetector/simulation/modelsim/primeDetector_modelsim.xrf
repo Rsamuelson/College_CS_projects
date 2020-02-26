@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, U:/CPRE281/mProj/primeDetector/primeDetector.v
+source_file = 1, U:/CPRE281/mProj/primeDetector/db/primeDetector.cbx.xml
+design_name = primeDetector
+instance = comp, \f~output , f~output, primeDetector, 1
+instance = comp, \w~input , w~input, primeDetector, 1
+instance = comp, \x~input , x~input, primeDetector, 1
+instance = comp, \y~input , y~input, primeDetector, 1
+instance = comp, \z~input , z~input, primeDetector, 1
+instance = comp, \f~0 , f~0, primeDetector, 1

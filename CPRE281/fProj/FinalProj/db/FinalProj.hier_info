@@ -1,0 +1,392 @@
+|FinalProj
+pin_name1 <= seven_segement_decoder:inst_temp.A
+X3 => seven_segement_decoder:inst_temp.x3
+X3 => Register:inst_reg_0.x3
+X3 => Register:inst_reg_1.x3
+X3 => Register:inst_reg_2.x3
+X3 => Register:inst_reg_3.x3
+X2 => seven_segement_decoder:inst_temp.x2
+X2 => Register:inst_reg_0.x2
+X2 => Register:inst_reg_1.x2
+X2 => Register:inst_reg_2.x2
+X2 => Register:inst_reg_3.x2
+X1 => seven_segement_decoder:inst_temp.x1
+X1 => Register:inst_reg_0.x1
+X1 => Register:inst_reg_1.x1
+X1 => Register:inst_reg_2.x1
+X1 => Register:inst_reg_3.x1
+X0 => seven_segement_decoder:inst_temp.x0
+X0 => Register:inst_reg_0.x0
+X0 => Register:inst_reg_1.x0
+X0 => Register:inst_reg_2.x0
+X0 => Register:inst_reg_3.x0
+pin_name2 <= seven_segement_decoder:inst_temp.B
+pin_name3 <= seven_segement_decoder:inst_temp.C
+pin_name4 <= seven_segement_decoder:inst_temp.D
+pin_name5 <= seven_segement_decoder:inst_temp.E
+pin_name6 <= seven_segement_decoder:inst_temp.F
+pin_name7 <= seven_segement_decoder:inst_temp.G
+pin_name8 <= seven_segement_decoder:inst_HEX3.A
+Selector0 => Decoder:inst_decoder.x0
+Selector1 => Decoder:inst_decoder.x1
+Clk => Register:inst_reg_0.Clk
+Clk => Register:inst_reg_1.Clk
+Clk => Register:inst_reg_2.Clk
+Clk => Register:inst_reg_3.Clk
+pin_name9 <= seven_segement_decoder:inst_HEX3.B
+pin_name10 <= seven_segement_decoder:inst_HEX3.C
+pin_name11 <= seven_segement_decoder:inst_HEX3.D
+pin_name12 <= seven_segement_decoder:inst_HEX3.E
+pin_name13 <= seven_segement_decoder:inst_HEX3.F
+pin_name14 <= seven_segement_decoder:inst_HEX3.G
+pin_name15 <= seven_segement_decoder:inst_HEX2.A
+pin_name16 <= seven_segement_decoder:inst_HEX2.B
+pin_name17 <= seven_segement_decoder:inst_HEX2.C
+pin_name18 <= seven_segement_decoder:inst_HEX2.D
+pin_name19 <= seven_segement_decoder:inst_HEX2.E
+pin_name20 <= seven_segement_decoder:inst_HEX2.G
+pin_name21 <= seven_segement_decoder:inst_HEX2.F
+pin_name22 <= seven_segement_decoder:inst_HEX1.A
+pin_name23 <= seven_segement_decoder:inst_HEX1.B
+pin_name24 <= seven_segement_decoder:inst_HEX1.C
+pin_name25 <= seven_segement_decoder:inst_HEX1.D
+pin_name26 <= seven_segement_decoder:inst_HEX1.E
+pin_name27 <= seven_segement_decoder:inst_HEX1.F
+pin_name28 <= seven_segement_decoder:inst_HEX1.G
+pin_name29 <= seven_segement_decoder:inst_HEX0.A
+pin_name30 <= seven_segement_decoder:inst_HEX0.B
+pin_name31 <= seven_segement_decoder:inst_HEX0.C
+pin_name32 <= seven_segement_decoder:inst_HEX0.D
+pin_name33 <= seven_segement_decoder:inst_HEX0.E
+pin_name34 <= seven_segement_decoder:inst_HEX0.F
+pin_name35 <= seven_segement_decoder:inst_HEX0.G
+
+
+|FinalProj|seven_segement_decoder:inst_temp
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+En => Decoder0.IN4
+
+
+|FinalProj|seven_segement_decoder:inst_HEX3
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+En => Decoder0.IN4
+
+
+|FinalProj|Register:inst_reg_0
+Out_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Clk => inst1.CLK
+Clk => inst2.CLK
+Clk => inst3.CLK
+Load => inst101.IN0
+x3 => Multiplexer:inst4.x1
+Out_2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x2 => Multiplexer:inst100.x1
+Out_1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x1 => Multiplexer:inst5.x1
+Out_0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x0 => Multiplexer:inst6.x1
+
+
+|FinalProj|Register:inst_reg_0|Multiplexer:inst4
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_0|Multiplexer:inst100
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_0|Multiplexer:inst5
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_0|Multiplexer:inst6
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Decoder:inst_decoder
+f0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+x0 => inst4.IN0
+x0 => inst1.IN0
+x0 => inst3.IN0
+x1 => inst5.IN0
+x1 => inst2.IN1
+x1 => inst3.IN1
+f1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+f2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+f3 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|FinalProj|seven_segement_decoder:inst_HEX2
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+En => Decoder0.IN4
+
+
+|FinalProj|Register:inst_reg_1
+Out_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Clk => inst1.CLK
+Clk => inst2.CLK
+Clk => inst3.CLK
+Load => inst101.IN0
+x3 => Multiplexer:inst4.x1
+Out_2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x2 => Multiplexer:inst100.x1
+Out_1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x1 => Multiplexer:inst5.x1
+Out_0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x0 => Multiplexer:inst6.x1
+
+
+|FinalProj|Register:inst_reg_1|Multiplexer:inst4
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_1|Multiplexer:inst100
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_1|Multiplexer:inst5
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_1|Multiplexer:inst6
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|seven_segement_decoder:inst_HEX1
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+En => Decoder0.IN4
+
+
+|FinalProj|Register:inst_reg_2
+Out_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Clk => inst1.CLK
+Clk => inst2.CLK
+Clk => inst3.CLK
+Load => inst101.IN0
+x3 => Multiplexer:inst4.x1
+Out_2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x2 => Multiplexer:inst100.x1
+Out_1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x1 => Multiplexer:inst5.x1
+Out_0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x0 => Multiplexer:inst6.x1
+
+
+|FinalProj|Register:inst_reg_2|Multiplexer:inst4
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_2|Multiplexer:inst100
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_2|Multiplexer:inst5
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_2|Multiplexer:inst6
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|seven_segement_decoder:inst_HEX0
+x3 => Decoder0.IN0
+x2 => Decoder0.IN1
+x1 => Decoder0.IN2
+x0 => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+En => Decoder0.IN4
+
+
+|FinalProj|Register:inst_reg_3
+Out_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Clk => inst1.CLK
+Clk => inst2.CLK
+Clk => inst3.CLK
+Load => inst101.IN0
+x3 => Multiplexer:inst4.x1
+Out_2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x2 => Multiplexer:inst100.x1
+Out_1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x1 => Multiplexer:inst5.x1
+Out_0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x0 => Multiplexer:inst6.x1
+
+
+|FinalProj|Register:inst_reg_3|Multiplexer:inst4
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_3|Multiplexer:inst100
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_3|Multiplexer:inst5
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_3|Multiplexer:inst6
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_temp
+Out_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Clk => inst1.CLK
+Clk => inst2.CLK
+Clk => inst3.CLK
+Load => inst101.IN0
+x3 => Multiplexer:inst4.x1
+Out_2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x2 => Multiplexer:inst100.x1
+Out_1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x1 => Multiplexer:inst5.x1
+Out_0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x0 => Multiplexer:inst6.x1
+
+
+|FinalProj|Register:inst_reg_temp|Multiplexer:inst4
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_temp|Multiplexer:inst100
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_temp|Multiplexer:inst5
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|FinalProj|Register:inst_reg_temp|Multiplexer:inst6
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+

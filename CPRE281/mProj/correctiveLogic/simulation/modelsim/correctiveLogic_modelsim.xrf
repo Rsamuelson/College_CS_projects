@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, U:/CPRE281/mProj/correctiveLogic/correctiveLogic.bdf
+source_file = 1, U:/CPRE281/mProj/correctiveLogic/bobscircuit.v
+design_name = correctiveLogic
+instance = comp, \g~output , g~output, correctiveLogic, 1
+instance = comp, \w~input , w~input, correctiveLogic, 1
+instance = comp, \x~input , x~input, correctiveLogic, 1
+instance = comp, \y~input , y~input, correctiveLogic, 1
+instance = comp, \z~input , z~input, correctiveLogic, 1
+instance = comp, \inst12~0 , inst12~0, correctiveLogic, 1

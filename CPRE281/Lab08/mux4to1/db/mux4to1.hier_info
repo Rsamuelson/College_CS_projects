@@ -1,0 +1,11 @@
+|mux4to1
+i0 => f.DATAA
+i1 => f.DATAB
+i2 => f.DATAA
+i3 => f.DATAB
+s[0] => f.OUTPUTSELECT
+s[0] => f.OUTPUTSELECT
+s[1] => f.OUTPUTSELECT
+f << f.DB_MAX_OUTPUT_PORT_TYPE
+
+

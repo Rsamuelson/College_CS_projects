@@ -1,0 +1,217 @@
+|lab6step1
+pin_name1 <= seven_seg_decoder:inst.A
+pin_name44 => adder_4bit:inst4.X3
+pin_name44 => seven_seg_decoder:inst3.Z
+pin_name40 => adder_4bit:inst4.Y3
+pin_name40 => seven_seg_decoder:inst2.Z
+pin_name43 => adder_4bit:inst4.X2
+pin_name43 => seven_seg_decoder:inst3.Y
+pin_name39 => adder_4bit:inst4.Y2
+pin_name39 => seven_seg_decoder:inst2.Y
+pin_name42 => adder_4bit:inst4.X1
+pin_name42 => seven_seg_decoder:inst3.X
+pin_name38 => adder_4bit:inst4.Y1
+pin_name38 => seven_seg_decoder:inst2.X
+pin_name41 => adder_4bit:inst4.X0
+pin_name41 => seven_seg_decoder:inst3.W
+pin_name37 => adder_4bit:inst4.Y0
+pin_name37 => seven_seg_decoder:inst2.W
+C1 => adder_4bit:inst4.Ci
+pin_name2 <= seven_seg_decoder:inst.B
+pin_name3 <= seven_seg_decoder:inst.C
+pin_name4 <= seven_seg_decoder:inst.D
+pin_name5 <= seven_seg_decoder:inst.E
+pin_name6 <= seven_seg_decoder:inst.F
+pin_name7 <= seven_seg_decoder:inst.G
+pin_name8 <= seven_seg_decoder:inst1.A
+pin_name9 <= seven_seg_decoder:inst1.B
+pin_name10 <= seven_seg_decoder:inst1.C
+pin_name11 <= seven_seg_decoder:inst1.D
+pin_name12 <= seven_seg_decoder:inst1.E
+pin_name13 <= seven_seg_decoder:inst1.F
+pin_name14 <= seven_seg_decoder:inst1.G
+pin_name15 <= seven_seg_decoder:inst2.A
+pin_name16 <= seven_seg_decoder:inst2.B
+pin_name17 <= seven_seg_decoder:inst2.C
+pin_name18 <= seven_seg_decoder:inst2.D
+pin_name19 <= seven_seg_decoder:inst2.E
+pin_name20 <= seven_seg_decoder:inst2.F
+pin_name21 <= seven_seg_decoder:inst2.G
+pin_name22 <= seven_seg_decoder:inst3.A
+pin_name23 <= seven_seg_decoder:inst3.B
+pin_name24 <= seven_seg_decoder:inst3.C
+pin_name25 <= seven_seg_decoder:inst3.D
+pin_name26 <= seven_seg_decoder:inst3.E
+pin_name27 <= seven_seg_decoder:inst3.F
+pin_name28 <= seven_seg_decoder:inst3.G
+
+
+|lab6step1|seven_seg_decoder:inst
+Z => Decoder0.IN0
+Y => Decoder0.IN1
+X => Decoder0.IN2
+W => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6step1|BinaryCodeDecimalConverter:inst5
+c0 => x2.IN0
+c0 => x2.IN0
+c0 => w2.IN0
+c0 => w2.IN0
+c0 => y1.IN0
+s3 => x2.IN1
+s3 => w2.IN1
+s3 => w2.IN1
+s3 => y1.IN1
+s2 => x2.IN1
+s2 => w2.IN1
+s2 => w2.IN1
+s2 => y1.IN1
+s2 => x1.IN1
+s2 => w2.IN1
+s2 => w2.IN1
+s2 => y1.IN1
+s1 => w2.IN1
+s1 => w2.IN1
+s1 => z1.IN1
+s1 => y1.IN1
+s1 => x1.IN1
+s1 => x1.IN1
+s1 => x1.IN1
+s1 => z1.IN1
+s1 => z1.IN1
+s1 => y1.IN1
+s1 => x1.IN1
+s0 => w1.DATAIN
+z2 <= <GND>
+y2 <= <GND>
+x2 <= x2.DB_MAX_OUTPUT_PORT_TYPE
+w2 <= w2.DB_MAX_OUTPUT_PORT_TYPE
+z1 <= z1.DB_MAX_OUTPUT_PORT_TYPE
+y1 <= y1.DB_MAX_OUTPUT_PORT_TYPE
+x1 <= x1.DB_MAX_OUTPUT_PORT_TYPE
+w1 <= s0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6step1|adder_4bit:inst4
+S3 <= full_adder:inst.SUM
+X3 => full_adder:inst.X
+Y3 => full_adder:inst.Y
+X2 => full_adder:inst6.X
+Y2 => full_adder:inst6.Y
+X1 => full_adder:inst7.X
+Y1 => full_adder:inst7.Y
+X0 => full_adder:inst8.X
+Y0 => full_adder:inst8.Y
+Ci => full_adder:inst8.Ci
+Co <= full_adder:inst.Co
+S2 <= full_adder:inst6.SUM
+S1 <= full_adder:inst7.SUM
+S0 <= full_adder:inst8.SUM
+
+
+|lab6step1|adder_4bit:inst4|full_adder:inst
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst5.IN0
+X => inst4.IN0
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN0
+Ci => inst2.IN1
+Ci => inst6.IN1
+Ci => inst4.IN1
+Co <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6step1|adder_4bit:inst4|full_adder:inst6
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst5.IN0
+X => inst4.IN0
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN0
+Ci => inst2.IN1
+Ci => inst6.IN1
+Ci => inst4.IN1
+Co <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6step1|adder_4bit:inst4|full_adder:inst7
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst5.IN0
+X => inst4.IN0
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN0
+Ci => inst2.IN1
+Ci => inst6.IN1
+Ci => inst4.IN1
+Co <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6step1|adder_4bit:inst4|full_adder:inst8
+SUM <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+X => inst.IN0
+X => inst5.IN0
+X => inst4.IN0
+Y => inst.IN1
+Y => inst5.IN1
+Y => inst6.IN0
+Ci => inst2.IN1
+Ci => inst6.IN1
+Ci => inst4.IN1
+Co <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6step1|seven_seg_decoder:inst1
+Z => Decoder0.IN0
+Y => Decoder0.IN1
+X => Decoder0.IN2
+W => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6step1|seven_seg_decoder:inst2
+Z => Decoder0.IN0
+Y => Decoder0.IN1
+X => Decoder0.IN2
+W => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|lab6step1|seven_seg_decoder:inst3
+Z => Decoder0.IN0
+Y => Decoder0.IN1
+X => Decoder0.IN2
+W => Decoder0.IN3
+A <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+B <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+C <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+D <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+E <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+F <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+G <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+
+

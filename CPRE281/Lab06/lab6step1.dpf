@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<pin_planner>
+	<pin_info>
+		<pin name="pin_name29" source="Pin Planner" >
+		</pin>
+		<pin name="pin_name30" source="Pin Planner" >
+		</pin>
+		<pin name="pin_name31" source="Pin Planner" >
+		</pin>
+		<pin name="pin_name32" source="Pin Planner" >
+		</pin>
+		<pin name="pin_name33" source="Pin Planner" >
+		</pin>
+		<pin name="pin_name34" source="Pin Planner" >
+		</pin>
+		<pin name="pin_name35" source="Pin Planner" >
+		</pin>
+		<pin name="pin_name36" source="Pin Planner" >
+		</pin>
+	</pin_info>
+	<buses>
+	</buses>
+	<group_file_association>
+	</group_file_association>
+	<pin_planner_file_specifies>
+	</pin_planner_file_specifies>
+</pin_planner>

@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, U:/CPRE281/Lab08/mux4to1/mux4to1.v
+source_file = 1, U:/CPRE281/Lab08/mux4to1/db/mux4to1.cbx.xml
+design_name = mux4to1
+instance = comp, \f~output , f~output, mux4to1, 1
+instance = comp, \i3~input , i3~input, mux4to1, 1
+instance = comp, \i1~input , i1~input, mux4to1, 1
+instance = comp, \s[0]~input , s[0]~input, mux4to1, 1
+instance = comp, \s[1]~input , s[1]~input, mux4to1, 1
+instance = comp, \i0~input , i0~input, mux4to1, 1
+instance = comp, \f~0 , f~0, mux4to1, 1
+instance = comp, \i2~input , i2~input, mux4to1, 1
+instance = comp, \f~1 , f~1, mux4to1, 1

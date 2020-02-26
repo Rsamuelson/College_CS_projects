@@ -1,0 +1,10 @@
+|lab3step1
+c => WideOr0.IN0
+c => WideOr1.IN0
+g => WideOr1.IN1
+g => WideOr0.IN1
+w => WideOr0.IN2
+w => WideOr1.IN2
+f << comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

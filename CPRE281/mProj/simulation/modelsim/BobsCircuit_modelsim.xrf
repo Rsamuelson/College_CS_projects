@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, U:/CPRE281/mProj/BobsCircuit.v
+source_file = 1, U:/CPRE281/mProj/db/BobsCircuit.cbx.xml
+design_name = BobsCircuit
+instance = comp, \f~output , f~output, BobsCircuit, 1
+instance = comp, \w~input , w~input, BobsCircuit, 1
+instance = comp, \x~input , x~input, BobsCircuit, 1
+instance = comp, \y~input , y~input, BobsCircuit, 1
+instance = comp, \z~input , z~input, BobsCircuit, 1
+instance = comp, \f~0 , f~0, BobsCircuit, 1

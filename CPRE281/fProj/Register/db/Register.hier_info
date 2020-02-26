@@ -1,0 +1,48 @@
+|Register
+Out_3 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+Clk => inst.CLK
+Clk => inst1.CLK
+Clk => inst2.CLK
+Clk => inst3.CLK
+Load => inst101.IN0
+x3 => Multiplexer:inst4.x1
+Out_2 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+x2 => Multiplexer:inst100.x1
+Out_1 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+x1 => Multiplexer:inst5.x1
+Out_0 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+x0 => Multiplexer:inst6.x1
+
+
+|Register|Multiplexer:inst4
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|Register|Multiplexer:inst100
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|Register|Multiplexer:inst5
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+
+|Register|Multiplexer:inst6
+f <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+Selector => inst3.IN0
+Selector => inst.IN1
+x1 => inst1.IN1
+x0 => inst.IN0
+
+

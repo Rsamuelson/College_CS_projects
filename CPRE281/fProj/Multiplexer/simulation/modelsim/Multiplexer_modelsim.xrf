@@ -1,0 +1,9 @@
+vendor_name = ModelSim
+source_file = 1, U:/CPRE281/fProj/Multiplexer/Multiplexer.bdf
+source_file = 1, U:/CPRE281/fProj/Multiplexer/db/Multiplexer.cbx.xml
+design_name = Multiplexer
+instance = comp, \f~output , f~output, Multiplexer, 1
+instance = comp, \x1~input , x1~input, Multiplexer, 1
+instance = comp, \Selector~input , Selector~input, Multiplexer, 1
+instance = comp, \x0~input , x0~input, Multiplexer, 1
+instance = comp, \inst2~0 , inst2~0, Multiplexer, 1

@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, U:/CPRE281/fProj/Register/Register.bdf
+source_file = 1, U:/CPRE281/fProj/Register/multiplexer.bdf
+design_name = Register
+instance = comp, \Out_3~output , Out_3~output, Register, 1
+instance = comp, \Out_2~output , Out_2~output, Register, 1
+instance = comp, \Out_1~output , Out_1~output, Register, 1
+instance = comp, \Out_0~output , Out_0~output, Register, 1
+instance = comp, \Clk~input , Clk~input, Register, 1
+instance = comp, \x3~input , x3~input, Register, 1
+instance = comp, \Load~input , Load~input, Register, 1
+instance = comp, \x2~input , x2~input, Register, 1
+instance = comp, \x1~input , x1~input, Register, 1
+instance = comp, \x0~input , x0~input, Register, 1
+instance = comp, \inst3~feeder , inst3~feeder, Register, 1

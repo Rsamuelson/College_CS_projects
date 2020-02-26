@@ -1,0 +1,14 @@
+the answer of 6427 + 1725 is 8152
+the answer to (6971 * 3925) - 95 is 27361080
+the answer to 79 + 12/5 is 81.000000
+the answer to 3640.0/107.9 is 33.734940
+the answer to (22/3)*3 is 21
+the answer to 22/(3*3) is 2
+the answer to 22/(3*3) is 2.000000
+the answer to (22/3)*3 is 21.000000
+the answer to (22.0/3)*3.0 is 22.000000
+the answer to 22/(3*3.0) is 2
+the answer to 22.0/3.0*3.0 is 22.000000
+the area of a circle with a diameter of 23.567 is 435.991739
+the number of meters in 14 feet, is 4.267200
+76 degrees in Fahrenheit is 24.444444 centigrade
